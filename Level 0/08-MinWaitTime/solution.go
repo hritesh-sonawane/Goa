@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// O(nlogn) time | O(1) space - where n is the no. of queries
 func MinWaitTime(queries []int) int {
 	sort.Ints(queries)   // [1, 2, 2, 3, 6]
 

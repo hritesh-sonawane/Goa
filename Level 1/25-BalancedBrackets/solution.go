@@ -20,6 +20,7 @@ var matching = map[rune]rune {
 	'}': '{',
 }
 
+// O(n) time | O(n) space
 func BalancedBrackets(s string) bool {
 	stack := []rune{}
 	for _, char := range s {
